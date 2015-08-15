@@ -30,7 +30,7 @@ class TestSeleniumUsingPhantomJS(unittest.TestCase):
         # submit the form (although google automatically searches now without submitting)
         inputElement.submit()
 
-       # we have to wait for the page to refresh, the last thing that seems to be updated is the title
+        # we have to wait for the page to refresh, the last thing that seems to be updated is the title
         WebDriverWait(self.driver, 10).until(EC.title_contains("Mazedur Rahman"))
 
     def tearDown(self):
