@@ -15,5 +15,8 @@ sudo pip install coverage
 # Install PhantomJS
 sudo apt-get install -y phantomjs
 
+# Install Selenium WebDriver
+sudo pip install selenium
+
 # Clean up downloaded archives
 sudo apt-get clean
