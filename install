@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Update package list
+sudo apt-get update
+
+# Install python-pip
+sudo apt-get install -y python-pip
+
+# Install nose
+sudo pip install nose
+
+# Install coverage
+sudo pip install coverage
+
+# Install PhantomJS
+sudo apt-get install -y phantomjs
+
+# Install Selenium WebDriver
+sudo pip install selenium
+
+# Clean up downloaded archives
+sudo apt-get clean
