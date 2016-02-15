@@ -1,10 +1,16 @@
 #!/bin/bash
 
-# Install python-pip 1.5.4-1. Latest version of pip installation broken; hence installing older!
-sudo apt-get install -y python-pip=1.5.4-1
+# Update package list
+sudo apt-get update
+
+# Install python-pip
+sudo apt-get install -y python-pip
 
 # Install nose
 sudo pip install nose
 
 # Install coverage
 sudo pip install coverage
+
+# Clean up downloaded archives
+sudo apt-get clean
