@@ -3,5 +3,5 @@
 - Install `behave` using `python-pip`: `sudo pip install behave`
  
 ## Run all tests
-- Change directory to the location of 'bdd/features/' directory
+- Change directory to `tutorials/bdd/features/`
 - Run tests: `behave`
