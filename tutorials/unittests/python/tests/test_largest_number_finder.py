@@ -10,7 +10,7 @@ class test_largest_number_finder(unittest.TestCase):
 	def test_b_largest(self):
 		self.assertEqual(5, largest_number_finder.find(2,5,3))
 		self.assertEqual(5, largest_number_finder.find(5,3,2))
-		
+
 	def test_c_largest(self):
 		self.assertEqual(5, largest_number_finder.find(2,3,5))
 		self.assertEqual(5, largest_number_finder.find(5,3,2))
