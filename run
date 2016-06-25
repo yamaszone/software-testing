@@ -17,7 +17,7 @@ help(){
 	printf "\t all\t\t: Run all tests.\n"
 	printf "\t bdd\t\t: Run all BDD tests.\n"
 	printf "\t pyunit\t\t: Run all pyUnit tests.\n"
-	printf "\t selenium\t: Run all Selenium test.\n"
+	printf "\t selenium\t: Run all Selenium tests.\n"
 	printf "\t h, help\t: Show this help.\n"
 	exit 0
 }
