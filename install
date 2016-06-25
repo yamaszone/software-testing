@@ -6,8 +6,11 @@ sudo apt-get update
 # Install python-pip
 sudo apt-get install -y python-pip
 
-# Install nose, behave, coverage, pexpect, selenium, phantomjs
+# Install nose, behave, coverage, pexpect, selenium
 sudo pip install -r requirements.txt
+
+# Install PhantomJS
+sudo apt-get install -y phantomjs
 
 # Clean up downloaded archives
 sudo apt-get clean
