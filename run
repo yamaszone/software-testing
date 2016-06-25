@@ -1,0 +1,48 @@
+#!/bin/bash
+
+run_all_bdd_tests(){
+    behave tutorials/bdd/features
+}
+
+run_all_pyunit_tests(){
+    nosetests tutorials/unittests/python
+}
+
+run_all_selenium_tests(){
+    nosetests tutorials/selenium
+}
+
+help(){
+	echo "Usage:"
+	printf "\t all\t\t: Run all tests.\n"
+	printf "\t bdd\t\t: Run all BDD tests.\n"
+	printf "\t pyunit\t\t: Run all pyUnit tests.\n"
+	printf "\t selenium\t: Run all Selenium test.\n"
+	printf "\t h, help\t: Show this help.\n"
+	exit 0
+}
+
+if [[ -z $1 ]];then
+	help
+	exit 0
+fi
+
+case $1 in
+	all)
+	    run_all_pyunit_tests
+	    run_all_bdd_tests
+	    run_all_selenium_tests
+		;;
+	bdd)
+	    run_all_bdd_tests
+		;;
+	pyunit)
+	    run_all_pyunit_tests
+		;;
+	selenium)
+	    run_all_selenium_tests
+		;;
+	* | h | help)
+		help
+		;;
+esac
