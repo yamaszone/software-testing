@@ -49,8 +49,7 @@ def step_impl(context, keyword):
     inputElement.send_keys(keyword)
     inputElement.submit()
     context.driver = driver
-"""
+
 @then(u'I should see "{expected_text}" in the page title')
 def step_impl(context, expected_text):
     WebDriverWait(context.driver, 10).until(EC.title_contains(expected_text))
-"""
