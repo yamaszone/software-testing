@@ -15,7 +15,7 @@ class TestSeleniumUsingPhantomJS(unittest.TestCase):
         #f = open('out.txt', 'w')
         #f.write(self.driver.current_url)
         #f.close()
-        assert "Stack OverflowS" in self.driver.title
+        assert "Stack Overflow" in self.driver.title
 
     def test_google_search_works(self):
         # go to the google home page
