@@ -30,7 +30,7 @@ def is_valid_us_zip_code(zip):
     Returns:
         bool: True if zip is a valid US zip code, False otherwise
     """
-    if re.match('\d{5}|\d{5}-\d{4}', zip) is not None:
+    if re.match('^\d{5}(-\d{4})?$', zip) is not None:
         return True
 
     return False
