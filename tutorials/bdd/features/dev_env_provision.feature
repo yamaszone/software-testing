@@ -13,6 +13,6 @@ Examples:
 | cat /etc/os-release   | Ubuntu 14.04                  |
 | python --version      | Python 2.7                    |
 | nosetests --version   | nosetests version 1.3         |
-| coverage --version    | Coverage.py, version 4.3      |
+| coverage --version    | Coverage.py, version 4.4      |
 | phantomjs --version   | 1.9                           |
 | behave --version      | behave 1.2                    |
