@@ -19,7 +19,7 @@ def is_valid_username(username):
     return False
 
 def is_valid_us_zip_code(zip):
-    """A valid fulfills one of the following conditions:
+    """A valid zipcode fulfills one of the following conditions:
     - Consists of 5 digits
         e.g. 55555
     - Consists of 5 digits followed by a dash (-) followed by 4 digits
