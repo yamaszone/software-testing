@@ -10,12 +10,9 @@ class TestSeleniumUsingPhantomJS(unittest.TestCase):
         self.driver = webdriver.PhantomJS()
 
     def test_page_title_exists(self):
-        self.driver.get('http://stackoverflow.com/')
+        self.driver.get('http://ieeexplore.ieee.org/')
 
-        #f = open('out.txt', 'w')
-        #f.write(self.driver.current_url)
-        #f.close()
-        assert "Stack Overflow" in self.driver.title
+        assert "IEEE Xplore Digital Library" in self.driver.title
 
     def test_google_search_works(self):
         # go to the google home page
