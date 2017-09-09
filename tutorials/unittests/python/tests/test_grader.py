@@ -3,7 +3,7 @@ from python.src import grader
 
 class test_grader(unittest.TestCase):
 	def test_calculate_returns_A(self):
-		self.assertEqual('B', grader.calculate(95))
+		self.assertEqual('A', grader.calculate(95))
 		
 	def test_calculate_returns_B(self):
 		self.assertEqual('B', grader.calculate(90))
