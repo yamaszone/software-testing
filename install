@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Update package list
-sudo apt-get update
+apt-get update
 
 # Install python-pip
-sudo apt-get install -y python-pip
+apt-get install -y python-pip
 
 # Install nose, behave, coverage, pexpect, selenium
-sudo pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Install PhantomJS
-sudo apt-get install -y phantomjs
+apt-get install -y phantomjs
 
 # Clean up downloaded archives
-sudo apt-get clean
+apt-get clean
