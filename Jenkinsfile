@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('A') {
       steps {
-        echo 'Hello'
+        sh '''#!/bin/bash
+
+./install'''
       }
     }
   }
