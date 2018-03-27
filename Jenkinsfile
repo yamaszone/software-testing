@@ -4,8 +4,7 @@ pipeline {
     stage('A') {
       steps {
         sh '''#!/bin/bash
-
-./install'''
+        ./install'''
       }
     }
   }
