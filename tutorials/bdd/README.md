@@ -1,6 +1,10 @@
 ## Setup BDD Test Environment
-- Install `pexpect` using `python-pip`: `sudo pip install pexpect`
-- Install `behave` using `python-pip`: `sudo pip install behave`
+ - Install `virtualenv` (for example, `sudo apt-get install -y python-virtualenv`)
+ - Create a virtual environment: `virtualenv venv`
+ - Activate the virtual environment: `. venv/bin/activate`
+ - Install `pexpect` using `pip`: `pip install pexpect`
+ - Install `behave` using `pip`: `pip install behave`
+ - Deactivate the virtual environment when finished: `deactivate`
  
 ## Run all tests
 - Change directory to `tutorials/bdd/features/`
